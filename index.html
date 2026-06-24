@@ -1,6 +1,12 @@
-<html>
+<!DOCTYPE html>
+<html lang="pt-BR">
     <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="A simple practice site about Willys, my Sheltie." />
         <title>Willys.com</title>
+        <link rel="icon" href="images/sheltie_icon.ico" />
     </head>
     <body>
         <h1>Willys!</h1>
@@ -21,6 +27,7 @@
             <li><a href="#história-e-genética">História e Genética</a></li>
             <li><a href="#padrões-de-pelagem">Padrões de pelagem</a></li>
             <li><a href="#cuidados-especiais-com-a-raça">Cuidados especiais com a raça</a></li>
+            <li><a href="#entre-em-contato">Entre em contato!</a></li>
         </ol>
         <h3 id="o-que-é-um-sheltie">
             O que é um Sheltie?
@@ -113,5 +120,20 @@
             <li><a href="https://www.americanshetlandsheepdogassociation.org/" target="_blank">American Shetland Sheepdog Association</a></li>
             <li><a href="https://en.wikipedia.org/wiki/Shetland_Sheepdog" target="_blank">Shetland Sheepdog Wikipedia</a></li>
         </ul>
+        <h3 id="entre-em-contato">
+            Entre em contato!
+        </h3>
+        <p>
+            Se você deseja entrar em contato comigo,
+            seja para compartilhar experiências, fazer perguntas sobre a raça
+            ou apenas para bater um papo sobre Shelties, sinta-se a vontade para
+            me contatar via formulário abaixo.
+        </p>
+        <form name="contact" autocomplete="on" target="_blank" method="post" onsubmit="alert('Mensagem enviada!');" action="#">
+            Nome: <input type="text" name="name" /><br>
+            Email: <input type="email" name="email" /><br>
+            Mensagem: <textarea name="message"></textarea><br>
+            <input type="submit" value="Enviar" />
+        </form>
     </body>
 </html>

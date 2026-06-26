@@ -5,8 +5,23 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="A simple practice site about Willys, my Sheltie." />
-        <title>Willys.com</title>
         <link rel="icon" href="images/sheltie_icon.ico" />
+        <title>Willys.com</title>
+        <style>
+            .row {
+                margin: 5px;
+            }
+            label {
+                width: 100px;
+                text-align: right;
+                display: inline-block;
+                padding-right: 5px;
+            }
+            fieldset {
+                margin: 15px 0;
+                border-radius: 10px;
+            }
+        </style>
     </head>
     <body>
         <h1>Willys!</h1>
@@ -16,7 +31,7 @@
         </h2>
         <a href="about.html"><small>Saiba mais</small></a>
         <p></p>
-        <img width="400" src="images/willys_grama_e_sol.jpg" alt="Willys, um Sheltie pelagem marta deitado na grama em um dia ensolarado" />
+        <img width="400" title="Willys, meu Sheltie!" src="images/willys_grama_e_sol.jpg" alt="Willys, um Sheltie pelagem marta deitado na grama em um dia ensolarado" />
         <blockquote>
             "Conheça Willys, Meu Sheltie de 1 ano e 9 meses!"
         </blockquote>
@@ -50,7 +65,7 @@
         <h3 id="história-e-genética">
             História e Genética
         </h3>
-        <img width="400" src="images/sheltie_historia.jpg" alt="Um Sheltie cercado por outras raças que compuseram a sua genética" />
+        <img width="400" title="Raças usadas na criação do Sheltie" src="images/sheltie_historia.jpg" alt="Um Sheltie cercado por outras raças que compuseram a sua genética" />
         <p>
             A história do Pastor de Shetland remonta às Ilhas Shetland, 
             onde foi criado para pastorear ovelhas em condições climáticas adversas. 
@@ -66,7 +81,7 @@
         <h3 id="padrões-de-pelagem">
             Padrões de pelagem
         </h3>
-        <img width="400" src="images/sheltie_pelagens.jpg" alt="Vários Shelties com diferentes cores e padrões de pelagem" />
+        <img width="400" title="Cores reconhecidas como padrão da raça" src="images/sheltie_pelagens.jpg" alt="Vários Shelties com diferentes cores e padrões de pelagem" />
         <p>
             O Pastor de Shetland apresenta uma variedade de cores e padrões 
             de pelagem, incluindo tricolor (preto, branco e castanho), 
@@ -112,6 +127,7 @@
             ou conforme necessário, a menos que se suje muito 
             ou tenha contato com água suja.
         </p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ZA6NE6lMJrI?si=sGzVns_6cX97bjak" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <h3>
             Saiba mais! <sub><small><a href="#índice">Voltar ao índice</a></small></sub>
         </h3>
@@ -129,11 +145,14 @@
             ou apenas para bater um papo sobre Shelties, sinta-se a vontade para
             me contatar via formulário abaixo.
         </p>
-        <form name="contact" autocomplete="on" target="_blank" method="post" onsubmit="alert('Mensagem enviada!');" action="#">
-            Nome: <input type="text" name="name" /><br>
-            Email: <input type="email" name="email" /><br>
-            Mensagem: <textarea name="message"></textarea><br>
-            <input type="submit" value="Enviar" />
-        </form>
+            <form name="contact" autocomplete="on" target="_blank" method="post" onsubmit="alert('Mensagem enviada!');" action="#">
+                <fieldset>
+                    <legend>Formulário de Contato</legend>
+                        <div class="row"><label>Nome: </label><input type="text" name="name" /></div>
+                        <div class="row"><label>Email: </label><input type="email" name="email" /></div>
+                        <div class="row"><label>Mensagem: </label><textarea name="message"></textarea></div>
+                </fieldset>
+                <input type="submit" value="Enviar" />
+            </form>
     </body>
 </html>

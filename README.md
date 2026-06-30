@@ -45,13 +45,13 @@ The website presents information about the breed, shares a few fun facts about W
 Clone the repository:
 
 ```bash
-git clone https://github.com/E-ternalSpring/static-html-website.git
+git clone https://github.com/E-ternalSpring/html-static-website.git
 ```
 
 Open the project folder:
 
 ```bash
-cd static-html-website
+cd html-static-website
 ```
 
 Finally, open `index.html` in your preferred web browser.
@@ -60,7 +60,7 @@ Finally, open `index.html` in your preferred web browser.
 
 ## 🌐 Live Demo
 
-https://e-ternalspring.github.io/static-html-website/
+https://e-ternalspring.github.io/html-static-website/
 
 ---
 
